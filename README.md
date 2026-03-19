@@ -1,55 +1,52 @@
+[README.md](https://github.com/user-attachments/files/26103031/README.md)
 # Toroidal Dynamics Toolkit (TDT) v1.0
 
 **Multi-Shot Real Tokamak Benchmark Suite with Risk Correlation**
 
-Extends **Psi Universe Attractor Library v2.0** for real experimental data.
+Modular Python toolkit for dynamic toroidal modulation in frequency-domain signal processing. Extends the [Ψ_universe Attractor Library v2.0](https://github.com/BEPframework/psi-universe-attractor) for real experimental tokamak data with multi-shot benchmarking and risk correlation analysis.
 
 ---
 
-## Features
+### Features
 
-- Loads multiple real EAST discharges (or any CSV with `time_s + ip_ma + disruption_risk`)
-- Runs Psi v2 with realistic plasma effects (noise + wall drift + actuator delay)
-- Computes stability scores and disruption-risk correlation
-- Generates summary tables and CSV output
+- Dynamic toroidal modulation in frequency-domain signal processing
+- Multi-shot real tokamak benchmark suite
+- Risk correlation analysis across discharge parameters
+- Extends the Ψ_universe attractor filter for experimental validation
 
----
+### Quick Start
 
-## Quick Start
+```bash
+# Run the toolkit
+python toroidal_dynamics_toolkit.py
 
-```python
-from toroidal_dynamics_toolkit import run_multi_shot_benchmark
-
-summary = run_multi_shot_benchmark("data_folder", [41195, 41196])
+# Run the multi-shot benchmark
+python benchmark_multi_shot.py
 ```
 
----
+Dependencies: Python 3.x, NumPy, SciPy.
 
-## Citation (please use this)
+### Related Repositories
 
-Quiroz, N. B. (2026).  
-*Toroidal Dynamics Toolkit (TDT) v1.0 — Multi-Shot Real Tokamak Benchmark Suite with Risk Correlation* [Software].  
-Zenodo. https://doi.org/10.5281/zenodo.18926038
+- [psi-universe-attractor](https://github.com/BEPframework/psi-universe-attractor) — Ψ_universe attractor filter, validated on real EAST #41195 data
+- [tasd-core](https://github.com/BEPframework/tasd-core) — TASD Core Framework (capstone documentation)
+- [tasd-framework](https://github.com/BEPframework/tasd-framework) — TASD Unified Framework (open-source release)
+- [q216d-tokamak-simulation](https://github.com/BEPframework/q216d-tokamak-simulation) — Interactive 3D plasma visualization with TASD-enhanced control
 
----
+### Copyright
 
-## License
+Copyright © 2026 Nicolas B. Quiroz, MD. All rights reserved for the original work.
 
-Copyright (C) 2026 Nicolas B. Quiroz, MD  
+### License
 
-Licensed under the **Apache License, Version 2.0**  
-(see the `LICENSE` file).
+See the [LICENSE](LICENSE) file for details.
 
----
+### Citation
 
-## Preprint Note
+If you use this toolkit, please cite:
 
-This is an open-source research artifact. Full technical preprint with derivations and additional shots will be linked in future versions. Feedback and real-shot collaborations welcome.
+> **Quiroz, N. B. (2026)**. *Toroidal Dynamics Toolkit v1.0*. Zenodo. https://doi.org/10.5281/zenodo.18926038
 
-## Keywords:
-tokamak
-fusion energy
-plasma physics
-toroidal plasma
-magnetic confinement
-plasma attractor dynamics
+### Keywords
+
+tokamak · fusion energy · plasma physics · toroidal plasma · magnetic confinement · frequency-domain signal processing
