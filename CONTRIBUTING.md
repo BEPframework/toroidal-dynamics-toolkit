@@ -1,6 +1,6 @@
 # Contributing to Toroidal Dynamics Toolkit
 
-Thanks for your interest in contributing! TDT is a modular Python toolkit for dynamic toroidal modulation in frequency-domain signal processing, with a multi-shot real tokamak benchmark suite.
+Thanks for your interest in contributing! TDT is a modular Python toolkit for dynamic toroidal modulation in frequency-domain signal processing, with a real-data benchmark runner (single-shot today; multi-shot planned).
 
 ## Ways to Contribute
 

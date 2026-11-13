@@ -1,18 +1,17 @@
-[README.md](https://github.com/user-attachments/files/26103031/README.md)
 # Toroidal Dynamics Toolkit (TDT) v1.0
 
-**Multi-Shot Real Tokamak Benchmark Suite with Risk Correlation**
+**Benchmark runner for real tokamak data (currently single-shot; multi-shot and risk correlation planned)**
 
-Modular Python toolkit for dynamic toroidal modulation in frequency-domain signal processing. Extends the [Ψ_universe Attractor Library v2.0](https://github.com/BEPframework/psi-universe-attractor) for real experimental tokamak data with multi-shot benchmarking and risk correlation analysis.
+Modular Python toolkit for dynamic toroidal modulation in frequency-domain signal processing. Extends the [Ψ_universe Attractor Library v2.0](https://github.com/BEPframework/psi-universe-attractor) for real experimental tokamak data. The current benchmark runs one EAST discharge (#41195); multi-shot benchmarking and risk correlation analysis are planned, not yet implemented.
 
 ---
 
 ### Features
 
 - Dynamic toroidal modulation in frequency-domain signal processing
-- Multi-shot real tokamak benchmark suite
-- Risk correlation analysis across discharge parameters
-- Extends the Ψ_universe attractor filter for experimental validation
+- Benchmark runner for real tokamak data (single shot today; multi-shot planned)
+- Risk correlation analysis across discharge parameters (planned)
+- Extends the Ψ_universe attractor filter for experimental testing
 
 ### Quick Start
 
@@ -20,7 +19,7 @@ Modular Python toolkit for dynamic toroidal modulation in frequency-domain signa
 # Run the toolkit
 python toroidal_dynamics_toolkit.py
 
-# Run the multi-shot benchmark
+# Run the benchmark (single shot; requires your own east_ip.txt)
 python benchmark_multi_shot.py
 ```
 
@@ -28,7 +27,7 @@ Dependencies: Python 3.x, NumPy, SciPy.
 
 ### Related Repositories
 
-- [psi-universe-attractor](https://github.com/BEPframework/psi-universe-attractor) — Ψ_universe attractor filter, validated on real EAST #41195 data
+- [psi-universe-attractor](https://github.com/BEPframework/psi-universe-attractor) — Ψ_universe attractor filter (exploratory; tested on one EAST discharge)
 - [tasd-core](https://github.com/BEPframework/tasd-core) — TASD Core Framework (capstone documentation)
 - [tasd-framework](https://github.com/BEPframework/tasd-framework) — TASD Unified Framework (open-source release)
 - [q216d-tokamak-simulation](https://github.com/BEPframework/q216d-tokamak-simulation) — Interactive 3D plasma visualization with TASD-enhanced control
